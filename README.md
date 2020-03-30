@@ -80,10 +80,10 @@ Caso o script não esteja cadastrado no alias, a classe entenderá que é uma UR
 Você pode configurar também o modo de importação:
 ```html
 <script>
-require.import('./assets/js/localScript.js',{async: false,inline: false});
-require.import('./assets/js/localScript.js',{async: false,inline: true});
-require.import('./assets/css/style.css',{inline: false});
-require.import('./assets/css/style.css',{inline: true});
+	require.import('./assets/js/localScript.js',{async: false,inline: false});
+	require.import('./assets/js/localScript.js',{async: false,inline: true});
+	require.import('./assets/css/style.css',{inline: false});
+	require.import('./assets/css/style.css',{inline: true});
 </script>
 ```
 O Resultado será:
