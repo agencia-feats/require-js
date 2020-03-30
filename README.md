@@ -76,6 +76,29 @@ Caso o script não esteja cadastrado no alias, a classe entenderá que é uma UR
 
 ```
 
+## Importação inline
+Você pode configurar também o modo de importação:
+```html
+<script>
+require.import('./assets/js/localScript.js',{async: false,inline: false});
+require.import('./assets/js/localScript.js',{async: false,inline: true});
+require.import('./assets/css/style.css',{inline: false});
+require.import('./assets/css/style.css',{inline: true});
+</script>
+```
+O Resultado será:
+```html
+<script required="true" src="./assets/js/localScript.js"></script>
+<script required="true"  path="./assets/js/localScript.js">
+	alert("esse é meu script")
+</script>
+<link required="true" rel="stylesheet" type="text/css" href="./assets/css/style.css">
+<style required="true" rel="stylesheet" type="text/css" path="./assets/css/style.css">
+	#div{
+		display:none;
+	}
+</style>
+```
 
 ## Exportando e importando funções
 
