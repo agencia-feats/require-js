@@ -127,5 +127,6 @@ require.export(exemplo,"meuAlias");
 
 Agora para utilizar ele globalmente em seu projeto basta utilizar assim:
 ```javascript
+require.import('/assets/js/meu_arquivo.js')
 require.meuAlias.minhaFn();
 ```
