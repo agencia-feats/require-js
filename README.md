@@ -130,3 +130,20 @@ Agora para utilizar ele globalmente em seu projeto basta utilizar assim:
 require.import('/assets/js/meu_arquivo.js')
 require.meuAlias.minhaFn();
 ```
+Ou ainda escrever inline direto no arquivo desta maneira:
+
+```javascript
+require.export(function(){
+
+	alert("testeeeeeee")
+
+},"alerta")
+```
+
+e executar normalmente posteriormente:
+```javascript
+require.alerta()
+```
+
+
+
