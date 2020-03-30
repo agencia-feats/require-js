@@ -82,7 +82,7 @@ Caso o script não esteja cadastrado no alias, a classe entenderá que é uma UR
 Para exportar suas funções, é necessário que o arquivo importado esteja dentro de objetos dessa maneira:
 ```javascript
 /* 
-www/assets/meu_arquivo.js
+   meu_arquivo.js
 */
 exemplo={
 	minhaFn:function(){
