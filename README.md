@@ -55,11 +55,10 @@ Para utilizar os arquivos utilize assim:
 	</body>
 </html>
 ```
-### Observação:
-Caso o script não esteja cadastrado no alias, a classe entenderá que é uma URL e inserirá como um arquivo remoto da seguinte maneira.
+### ALIAS vs URL:
+Caso o script não esteja cadastrado no alias, a classe entenderá que é uma URL e inserirá como um arquivo remoto da seguinte maneira:
 ```html
 <script>
-	require.require('jquery'); // Alias
 	require.require('/jquery-3.2.1.min.js'); // URL
 </script>
 
@@ -69,7 +68,9 @@ Caso o script não esteja cadastrado no alias, a classe entenderá que é uma UR
 ```
  Caso o script inserido esteja no JSON, a classe interpretará da seguinte maneira:
   ```html
-	<script>require.require('bootstrap');</script>
+	<script>
+		require.require('bootstrap'); //ALIAS
+	</script>
 	
 	<!-- Retornará o preset inteiro: !-->
 	<link href="/assets/css/bootstrap.bundle.min.js" rel="stylesheet">
