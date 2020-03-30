@@ -88,16 +88,21 @@ require.import('./assets/css/style.css',{inline: true});
 ```
 O Resultado será:
 ```html
+
 <script required="true" src="./assets/js/localScript.js"></script>
 <script required="true"  path="./assets/js/localScript.js">
 	alert("esse é meu script")
 </script>
+
+
+
 <link required="true" rel="stylesheet" type="text/css" href="./assets/css/style.css">
 <style required="true" rel="stylesheet" type="text/css" path="./assets/css/style.css">
 	#div{
 		display:none;
 	}
 </style>
+
 ```
 
 ## Exportando e importando funções
