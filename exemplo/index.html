@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <meta charset="utf-8" /></title>
+        <script src="./assets/js/require.js"></script>
+        <script>
+            require.setup('./assets/json/mapScript.json');
+        </script>
+    </head>
+    <body>
+
+
+
+
+        <script>
+            require.import('https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js');
+            require.import('https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css');
+            require.import('./assets/js/localScript.js');
+            require.import('jquery');
+            require.import('jqueryUI',{async: false,inline: false,logLoaded: false});
+
+            setTimeout(function(){
+                require.meuAlias.minhaFn();
+            },1000)
+
+
+        </script>
+    </body>
+</html>
