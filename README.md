@@ -1,4 +1,4 @@
-## FUNÇÃO INCLUDE PARA JAVASCRIPT 
+## FUNÇÃO REQUIRE PARA JAVASCRIPT 
 
 Função desenvolvida para importar um scripts Javascript de maneira simples e rápida.
 
@@ -39,7 +39,7 @@ require.setup('path/json/arquivo.json');
 Para utilizar os arquivos utilize assim:
 ```html
 <!DOCTYPE html>
-	<html>  
+<html>  
 	<head>    
 		<script src="/assets/js/require.js"></script>
 		<script>
@@ -53,14 +53,15 @@ Para utilizar os arquivos utilize assim:
 			require.require('slickCarousel');
 		</script>
 	</body>
-	</html>
+</html>
 ```
 ### Observação:
 Caso o script não esteja cadastrado no alias, a classe entenderá que é uma URL e inserirá como um arquivo remoto da seguinte maneira.
 ```html
-	<script>require.require('/jquery-3.2.1.min.js');</script>
-	<!-- RETORNA !-->
-	<script src="/jquery-3.2.1.min.js"></script>
+<script>require.require('/jquery-3.2.1.min.js');</script>
+
+<!-- RETORNA !-->
+<script src="/jquery-3.2.1.min.js"></script>
 	
 ```
  Caso o script inserido esteja no JSON, a classe interpretará da seguinte maneira:
