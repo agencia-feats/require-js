@@ -58,7 +58,10 @@ Para utilizar os arquivos utilize assim:
 ### Observação:
 Caso o script não esteja cadastrado no alias, a classe entenderá que é uma URL e inserirá como um arquivo remoto da seguinte maneira.
 ```html
-<script>require.require('/jquery-3.2.1.min.js');</script>
+<script>
+	require.require('jquery'); // Alias
+	require.require('/jquery-3.2.1.min.js'); // URL
+</script>
 
 <!-- RETORNA !-->
 <script src="/jquery-3.2.1.min.js"></script>
